@@ -29,20 +29,14 @@ header {
   margin: 0 auto;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.logo span {
-  color: #007bff;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
+  justify-content: center; /* <-- centraliza horizontalmente */
   gap: 1.5rem;
+  width: 100%;
 }
+
 
 .nav-links a {
   text-decoration: none;
@@ -67,30 +61,6 @@ header {
     display: none; /* A ser ativado futuramente com JS ou checkbox */
   }
 }
-
-/* Hero Section */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url('https://media.giphy.com/media/lbcLMX9B6sTsGjUmS3/giphy.gif') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
-}
-
 /* Sobre mim */
 .sobre {
   padding: 4rem 1rem;
@@ -156,24 +126,41 @@ header {
 }
 
 .card {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
-  width: 300px;
+  width: 300px; /* aumente aqui o tamanho */
+  height: 320px; /* altura fixa ou ajuste automático */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .card h3 {
   margin-bottom: 1rem;
-  color: #007bff;
+  font-size: 1.5rem;
+  font-family: inherit; /* herda a fonte do container */
 }
 
-/* Contato minimalista com ícones */
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+}
+
+
+/* Contato estilizado */
 .contato {
   background-color: #fff;
   padding: 4rem 1rem;
@@ -197,19 +184,64 @@ header {
   flex-wrap: wrap;
 }
 
-.contato-cards a {
-  display: inline-block;
+.contato-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
   transition: transform 0.3s ease;
 }
 
-.contato-cards a:hover {
-  transform: scale(1.1);
+.contato-card:hover {
+  transform: translateY(-5px);
 }
 
 .contato-icon {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
+.contato-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* dashboard.html */
+
+.dashboard-content {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-img img {
+  width: 400px;
+  border-radius: 25px;
+  border: 1px solid #002b36;
+}
+
+.dashboard-desc {
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 40px;
+  border: 1px solid #002b36;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 
