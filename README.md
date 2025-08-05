@@ -1,4 +1,4 @@
-# 🚀 Portfólio Dev | Lucas Machado
+# 🚀 Portfólio Dev | Lucas Travassos
 
 👋 Seja bem-vindo ao meu portfólio desenvolvido com **HTML + CSS puro**, criado com foco no aprendizado, organização e boa apresentação visual.
 
